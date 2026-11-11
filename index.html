@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>The Cozy Soup Club | Warm winter soup recipes</title>
+  <meta name="description" content="Warm, comforting winter soup recipes, both vegetarian and non-vegetarian. Search by ingredient and filter by diet.">
+  <meta name="theme-color" content="#c8553d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M8 48h84c0 24-17 40-42 40S8 72 8 48z' fill='%23c8553d'/%3E%3Cellipse cx='50' cy='48' rx='42' ry='9' fill='%23e9a23b'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="The Cozy Soup Club home">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><path d="M8 48h84c0 24-17 40-42 40S8 72 8 48z" fill="#c8553d"/><ellipse cx="50" cy="48" rx="42" ry="9" fill="#e9a23b"/></svg>
+        The Cozy Soup Club
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html" aria-current="page">Home</a></li>
+        <li><a href="recipes.html">All Soups</a></li>
+        <li><a href="recipes.html?type=vegetarian">Vegetarian</a></li>
+        <li><a href="recipes.html?type=non-vegetarian">Non-vegetarian</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <span class="eyebrow">Winter recipes, slow-simmered</span>
+          <h1>Warm up with a bowl of something good.</h1>
+          <p class="lead">Twelve cozy soups for cold nights, from silky vegan squash to hearty beef and barley. Search by ingredient, filter by diet, and get simmering.</p>
+          <div class="hero-actions">
+            <a class="btn" href="recipes.html">Browse all soups</a>
+            <a class="btn btn-outline" href="recipes.html?type=vegetarian">Vegetarian picks</a>
+          </div>
+        </div>
+        <div class="hero-art">
+          <svg viewBox="0 0 320 280" role="img" aria-label="A steaming bowl of soup">
+            <g class="steam">
+              <path d="M110 70c-14 18 14 28 0 48"/>
+              <path d="M160 50c-14 18 14 28 0 48"/>
+              <path d="M210 70c-14 18 14 28 0 48"/>
+            </g>
+            <path d="M36 150c0 82 62 112 124 112s124-30 124-112z" fill="#c8553d"/>
+            <ellipse cx="160" cy="150" rx="124" ry="30" fill="#e9a23b"/>
+            <ellipse cx="160" cy="150" rx="124" ry="30" fill="none" stroke="#9f3e2a" stroke-width="7"/>
+            <circle cx="115" cy="146" r="7" fill="#6f9a74"/>
+            <circle cx="170" cy="156" r="6" fill="#6f9a74"/>
+            <circle cx="215" cy="145" r="7" fill="#fff8ee" fill-opacity=".8"/>
+            <circle cx="140" cy="162" r="5" fill="#fff8ee" fill-opacity=".8"/>
+            <path d="M60 205c30 28 70 36 100 36" fill="none" stroke="#fff" stroke-opacity=".25" stroke-width="8" stroke-linecap="round"/>
+          </svg>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Start where you're hungry</h2>
+            <p>Pick a lane, or browse everything.</p>
+          </div>
+        </div>
+        <div class="tiles">
+          <a class="tile veg" href="recipes.html?type=vegetarian">
+            <h3>Vegetarian</h3>
+            <p>Six meat-free bowls, including vegan and gluten-free options.</p>
+          </a>
+          <a class="tile nonveg" href="recipes.html?type=non-vegetarian">
+            <h3>Non-vegetarian</h3>
+            <p>Chicken, beef, sausage and seafood soups with serious comfort.</p>
+          </a>
+          <a class="tile" href="recipes.html?diet=high-protein">
+            <h3>High-protein</h3>
+            <p>Filling bowls that eat like a full dinner.</p>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section-alt">
+      <div class="container">
+        <div class="section-head">
+          <div>
+            <h2>Club favorites</h2>
+            <p>Three bowls to try first.</p>
+          </div>
+          <a href="recipes.html">See all 12 soups</a>
+        </div>
+        <div id="featured" class="grid" aria-live="polite"></div>
+        <noscript><p>Please enable JavaScript to see featured recipes, or <a href="recipes.html">browse all soups</a>.</p></noscript>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head"><h2>Why a soup club?</h2></div>
+        <div class="values">
+          <div class="value">
+            <h3>Simple, real ingredients</h3>
+            <p>Every recipe uses pantry staples and fresh vegetables you can find at any grocery store.</p>
+          </div>
+          <div class="value">
+            <h3>Filter for how you eat</h3>
+            <p>Vegan, gluten-free, dairy-free or high-protein. Narrow down the list in one click.</p>
+          </div>
+          <div class="value">
+            <h3>Made for weeknights</h3>
+            <p>Most soups are on the table in under an hour, and nearly all of them taste better the next day.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>The Cozy Soup Club</strong> &middot; a personal portfolio project</p>
+      <p>Dietary tags are based on standard ingredients. Always check your product labels if you have allergies.</p>
+      <p>&copy; <span id="year"></span> The Cozy Soup Club</p>
+    </div>
+  </footer>
+
+  <script src="js/recipes-data.js"></script>
+  <script src="js/shared.js"></script>
+  <script>
+    document.addEventListener("DOMContentLoaded", function () {
+      var featured = ["butternut-squash-coconut", "chicken-noodle", "roasted-tomato-basil"];
+      var host = document.getElementById("featured");
+      featured.forEach(function (id) {
+        var r = window.RECIPES.find(function (x) { return x.id === id; });
+        if (r) host.appendChild(window.Soup.recipeCard(r));
+      });
+    });
+  </script>
+</body>
+</html>

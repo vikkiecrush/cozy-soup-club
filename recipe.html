@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Recipe | The Cozy Soup Club</title>
+  <meta name="description" content="A cozy winter soup recipe from The Cozy Soup Club.">
+  <meta name="theme-color" content="#c8553d">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cpath d='M8 48h84c0 24-17 40-42 40S8 72 8 48z' fill='%23c8553d'/%3E%3Cellipse cx='50' cy='48' rx='42' ry='9' fill='%23e9a23b'/%3E%3C/svg%3E">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,600;9..144,700&family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="The Cozy Soup Club home">
+        <svg viewBox="0 0 100 100" aria-hidden="true"><path d="M8 48h84c0 24-17 40-42 40S8 72 8 48z" fill="#c8553d"/><ellipse cx="50" cy="48" rx="42" ry="9" fill="#e9a23b"/></svg>
+        The Cozy Soup Club
+      </a>
+      <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links">Menu</button>
+      <ul id="nav-links" class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="recipes.html">All Soups</a></li>
+        <li><a href="recipes.html?type=vegetarian">Vegetarian</a></li>
+        <li><a href="recipes.html?type=non-vegetarian">Non-vegetarian</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main id="main">
+    <div id="recipe-root"></div>
+    <noscript><div class="container"><p>This page needs JavaScript to display the recipe.</p></div></noscript>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p><strong>The Cozy Soup Club</strong> &middot; a personal portfolio project</p>
+      <p>Dietary tags are based on standard ingredients. Always check your product labels if you have allergies.</p>
+      <p>&copy; <span id="year"></span> The Cozy Soup Club</p>
+    </div>
+  </footer>
+
+  <script src="js/recipes-data.js"></script>
+  <script src="js/shared.js"></script>
+  <script src="js/recipe.js"></script>
+</body>
+</html>
