@@ -1,5 +1,7 @@
 # The Cozy Soup Club
 
+**Live site: https://cozy-soup-club.netlify.app**
+
 A personal portfolio project: a responsive recipe website for winter soups.
 Built with plain HTML, CSS and vanilla JavaScript. There are no frameworks, no build step and no dependencies.
 
@@ -42,14 +44,19 @@ Add an object to the array in `js/recipes-data.js`. Required fields: `id` (uniqu
 `type` (`vegetarian` or `non-vegetarian`), `diets` (any of `vegan`, `gluten-free`, `dairy-free`, `high-protein`), `time` (minutes),
 `servings`, `difficulty`, `ingredients[]`, `steps[]` and optional `tip`.
 
-## Deploy to GitHub Pages
+## Deployment
 
-1. Create a new public repo on your personal GitHub account named `cozy-soup-club`.
-2. Push this folder to the `main` branch.
-3. In the repo go to Settings, then Pages. Set the source to "Deploy from a branch", choose `main` and `/ (root)`, then save.
-4. The site goes live at `https://<your-username>.github.io/cozy-soup-club/`.
+The site is deployed on Netlify from the `main` branch of this repo, and every push to `main` redeploys automatically.
 
-All asset paths are relative, so the site works from a project sub-path.
+To deploy your own copy:
+
+1. Fork or clone this repo to your own GitHub account.
+2. In Netlify, choose Add new site, then Import an existing project, and select the repo.
+3. Leave the build command blank and set the publish directory to `.` (the repo root).
+4. Deploy, then set a project name under Project configuration, then General.
+5. Make sure Visitor access under Access & security is set to public.
+
+All asset paths are relative, so the site also works from a sub-path (for example GitHub Pages).
 
 ## Ideas for v2
 
